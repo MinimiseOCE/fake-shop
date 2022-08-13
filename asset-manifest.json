@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/fake-store/static/css/main.394f7785.css",
+    "main.js": "/fake-store/static/js/main.3a799106.js",
+    "static/media/black4alt.png": "/fake-store/static/media/black4alt.83690849bbaae59539f8.png",
+    "static/media/blue6alt.png": "/fake-store/static/media/blue6alt.939d431b57d21a209b89.png",
+    "static/media/black4.png": "/fake-store/static/media/black4.21a88750468762fb5c26.png",
+    "static/media/black6.png": "/fake-store/static/media/black6.4aeaedbbd1d6f1900e5d.png",
+    "static/media/blue6.png": "/fake-store/static/media/blue6.cb28ac8c49e2c57da8ae.png",
+    "static/media/black6alt.png": "/fake-store/static/media/black6alt.6bf5a2ff20644f36bd67.png",
+    "static/media/black12.png": "/fake-store/static/media/black12.f88381be7ea0960c954a.png",
+    "static/media/black10.png": "/fake-store/static/media/black10.abc2052d242739ba80d0.png",
+    "static/media/blue10alt.png": "/fake-store/static/media/blue10alt.91283d84bbe158cb512c.png",
+    "static/media/blue12.png": "/fake-store/static/media/blue12.c453e7f2b69c864b606f.png",
+    "static/media/black12alt.png": "/fake-store/static/media/black12alt.f8d4ca6f6fc7b4501413.png",
+    "static/media/blue12alt.png": "/fake-store/static/media/blue12alt.17160b8f310e1d23c644.png",
+    "static/media/blue10.png": "/fake-store/static/media/blue10.f344bd847760826ce635.png",
+    "static/media/blue4.png": "/fake-store/static/media/blue4.1f84ad1cd6df2bde09f6.png",
+    "static/media/blue4alt.png": "/fake-store/static/media/blue4alt.bb758544c602c4c71f4b.png",
+    "static/media/black10alt.png": "/fake-store/static/media/black10alt.712b58c1888fbe497e87.png",
+    "static/media/bodypic.jpg": "/fake-store/static/media/bodypic.4d12ce660fe642b915f4.jpg",
+    "static/media/logo.svg": "/fake-store/static/media/logo.59cbabe5c95f52137aed91c49126afbe.svg",
+    "static/media/addCart.svg": "/fake-store/static/media/addCart.4df3004ae4a09d5c6a6999d0ef075b4d.svg",
+    "static/media/exit.svg": "/fake-store/static/media/exit.de47ad44df1d76aa7b39a196c17acc17.svg",
+    "static/media/cart.svg": "/fake-store/static/media/cart.4d4261bb5b13e2d91a23b0f281b47cc7.svg",
+    "static/media/add.svg": "/fake-store/static/media/add.b69cf7bc50ce4ad0c8c8f39c5fbe26f4.svg",
+    "index.html": "/fake-store/index.html",
+    "static/media/minus.svg": "/fake-store/static/media/minus.f0e1fc9ddb0cd316bb9f4493c9e8466a.svg",
+    "main.394f7785.css.map": "/fake-store/static/css/main.394f7785.css.map",
+    "main.3a799106.js.map": "/fake-store/static/js/main.3a799106.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.394f7785.css",
+    "static/js/main.3a799106.js"
+  ]
+}
