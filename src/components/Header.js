@@ -13,13 +13,13 @@ export default function Header(props) {
                 <div className='middleText' >
 
                     <img className='logo' src={logo} alt='logo'></img>
-                    <h1 className='logotext'>dice</h1>
+                    <h1 className='logotext'>flips</h1>
 
                 </div>
             </Link>
             <Link to="/store">
                 <div className='rightText'>
-                    <img className='cart' src={cart} alt='cart' onClick={() => props.toggleCart(!props.show)}
+                    <img className='logo' src={cart} alt='cart' onClick={() => props.toggleCart(!props.show)}
                     ></img>
                     <h2>({props.items.length})</h2>
                 </div>

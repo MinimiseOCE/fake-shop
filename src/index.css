@@ -1,21 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Chewy&family=DynaPuff&family=Roboto:wght@300&display=swap');
 
 body {
-  background-color: #1B1927;
+  background-color: #F9F2ED;
   margin: 0;
   height: 90vh;
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: 'Bebas Neue', cursive;
-  background-color: #363636;
-  color: #FFFFFF;
+  background-color: #F87474;
+  color: #F9F2ED;
   padding: 1vh;
-  filter: drop-shadow(0 0 0.75rem #171717);
+  filter: drop-shadow(0 0 0.25rem #171717);
   height: 9vh;
+  z-index: 10;
 }
 
 .logo,
@@ -24,9 +28,25 @@ body {
   margin: 0;
 }
 
+.cart {
+  filter: invert(1);
+  background-color: black;
+  border-radius: 100%;
+}
+
+.cart:hover {
+  filter: invert(0);
+  cursor: pointer;
+}
+
 .logo {
   margin: 0;
   padding: 0;
+}
+
+.logo:hover {
+  cursor: pointer;
+  filter: blur(1px);
 }
 
 .nav,
@@ -51,6 +71,11 @@ body {
   color: #d7d7d7;
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
 .middleText {
   display: flex;
   flex-direction: column;
@@ -64,14 +89,14 @@ body {
 }
 
 .slogan {
-  color: #C1666B;
-  font-family: 'Bebas Neue', cursive;
+  color: #FFB562;
+  font-family: 'Bungee Shade', cursive;
   font-size: 5rem;
   margin-bottom: 5px;
 }
 
 .text1 {
-  color: white;
+  color: #F87474;
   font-family: 'Bebas Neue', cursive;
   font-size: 2rem;
   margin-top: 5px
@@ -87,10 +112,14 @@ body {
   position: sticky;
   height: 90vh;
   width: 60vh;
-  border-right: solid 0.2vw #171717;
+  border-right: solid 0.2vw #FFB562;
+  z-index: -10;
 }
 
 .bodyText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 120vh;
 }
 
@@ -101,9 +130,10 @@ body {
   font-size: 2.2rem;
   letter-spacing: 0.1vw;
   color: #1F1D28;
-  background-color: #9A8D9E;
+  background-color: #3AB0FF;
   border: solid 0.2vw #1F1D28;
   border-radius: 15px;
+  margin-bottom: 40vh;
 }
 
 .storeButton:hover {
@@ -137,9 +167,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0.2vw solid #363636;
+  border: 0.3vw solid #3AB0FF;
   border-radius: 15px;
-  background-color: black;
+  background-color: white;
   color: white;
   padding: 1vw;
 }
@@ -150,58 +180,96 @@ a {
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
-  background-color: black;
-  color: white;
+  font-size: 1.5rem;
+  color: #3AB0FF;
   padding: 1vw;
 }
 
 .shoppingCart {
-  color: white;
+  flex-shrink: 0;
+  color: black;
   font-family: 'Bebas Neue', cursive;
   font-size: 1.5rem;
   right: 0;
   top: 0;
-  border-left: solid 0.5vw #1B1927;
+  border-left: solid 0.5vw #F87474;
   height: 100vh;
   width: 30vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #9A8D9E;
+  background-color: #ffb6624a;
+  top: 9vh;
   position: sticky;
+  backdrop-filter: blur(50px);
+  transition: width 1s;
+}
+
+.shoppingCart:hover {
+  width: 100vw;
+  backdrop-filter: blur(100px);
 }
 
 .exitIcon {
   width: 2vw;
+  filter: invert(100);
+}
+
+.exitIcon:hover {
+  cursor: pointer;
+  filter: invert(1);
 }
 
 .shoppingItem {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.product {
+  height: 200px;
 }
 
 .checkoutItem {
-  color: white;
-  font-family: 'Bebas Neue', cursive;
+  color: black;
+  font-family: 'Roboto', cursive;
   font-size: 1.5rem;
   border-bottom: solid 0.2vw #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #9A8D9E;
   position: sticky;
-  display: flex;
-  justify-content: space-around;
+  align-items: center;
   text-align: center;
 }
 
-.checkoutBackground {
-  background-color: #9A8D9E;
+.checkoutButton {
+  margin-top: 5vh;
+  width: 15vw;
+  height: 10vh;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.1vw;
+  color: #1F1D28;
+  background-color: #3AB0FF;
+  border: solid 0.2vw #1F1D28;
+  border-radius: 15px;
 }
 
-.checkoutButton {
+.checkoutButton:hover {
+  cursor: pointer;
+  background-color: #424242;
+  border: solid 0.2vw #000000;
+}
+
+.checkoutTitle {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.checkoutPage {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
 }
 
 .body {

@@ -17,11 +17,16 @@ export default function Home() {
                     <img className='bodyPic' alt='women holding dice' src={bodyPic}></img>
                 </div>
                 <div className='bodyText'>
-                    <h1 className="slogan">Leading Dice Retailer</h1>
-                    <h2 className="text1"> Low Quality Dice for a High Quality Price!</h2>
-                    <Link to="/store">
-                        <button className='storeButton'>Buy Dice Now!</button>
-                    </Link>
+                    <div>
+                        <h1 className="slogan">Sneak with Style</h1>
+                        <h2 className="text1"> I believe sneakers are wearable art. They tell a story, and their purpose is to support your whole body and carry you through life.</h2>
+                    </div>
+                    <div>
+                        <Link to="/store">
+                            <button className='storeButton'>Buy Sneakers!</button>
+                        </Link>
+                    </div>
+                    <h2 className="text1"> A Fake Store by Minimise</h2>
                 </div>
                 {showCart ? <ShoppingCart items={globalItems} /> : null}
             </div>

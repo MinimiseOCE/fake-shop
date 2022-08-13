@@ -63,15 +63,17 @@ export default function ShoppingCart(props) {
                         <ShoppingItem
                             name={item.id} quantity={item.quantity} price={(item.quantity) * (item.price)}
                         />
-                        <img className='exitIcon' alt='add icon' src={add} onClick={() => addItem(item.id)} />
-                        <img className='exitIcon' alt='subtract icon' src={minus} onClick={() => subtractItem(item.id)} />
-                        <img className='exitIcon' alt='exit icon' src={exit} onClick={() => removeItem(item.id)} />
+                        <div className='buttons'>
+                            <img className='exitIcon' alt='add icon' src={add} onClick={() => addItem(item.id)} />
+                            <img className='exitIcon' alt='subtract icon' src={minus} onClick={() => subtractItem(item.id)} />
+                            <img className='exitIcon' alt='exit icon' src={exit} onClick={() => removeItem(item.id)} />
+                        </div>
                     </div>
                 ))}
 
                 <h1 className='price'>Total Price: <br></br>${total.toFixed(2)}</h1>
                 <Link to="/checkout">
-                    <button>Checkout</button>
+                    <button className='checkoutButton'>Checkout</button>
                 </Link>
             </div>
         )

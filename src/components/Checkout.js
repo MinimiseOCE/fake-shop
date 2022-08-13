@@ -17,18 +17,21 @@ export default function Checkout() {
     return (
         <div>
             <Header items={globalItems} />
-            <div className="checkoutBackground">
-                {globalItems.map(item => (
-                    <div className='checkoutItem' key={item.id}>
-                        <ShoppingItem
-                            name={item.id} quantity={item.quantity} price={(item.quantity) * (item.price)}
-                        />
-                    </div>
-                ))}
-                <h1 className='checkoutItem'>Total Price: <br></br>${total.toFixed(2)}</h1>
-            </div>
-            <div className='checkoutButton'>
-                <button className='checkoutButton' onClick={() => alert('This is a fake store, thanks for coming by!')}>Checkout</button>
+            <div className="checkoutPage">
+                <h1 className="checkoutTitle">Your Cart</h1>
+                <div className="checkoutBackground">
+                    {globalItems.map(item => (
+                        <div className='checkoutItem' key={item.id}>
+                            <ShoppingItem
+                                name={item.id} quantity={item.quantity} price={(item.quantity) * (item.price)}
+                            />
+                        </div>
+                    ))}
+                    <h1 className='checkoutItem'>Total: <br></br>${total.toFixed(2)}</h1>
+                </div>
+                <div>
+                    <button className='checkoutButton' onClick={() => alert('This is a fake store, thanks for coming by!')}>Checkout</button>
+                </div>
             </div>
         </div>
     )
