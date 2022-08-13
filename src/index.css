@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff&family=Roboto:wght@300&display=swap');
+
+body {
+  background-color: #1B1927;
+  margin: 0;
+  height: 90vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Bebas Neue', cursive;
+  background-color: #363636;
+  color: #FFFFFF;
+  padding: 1vh;
+  filter: drop-shadow(0 0 0.75rem #171717);
+  height: 9vh;
+}
+
+.logo,
+.cart {
+  height: 6vh;
+  margin: 0;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+}
+
+.nav,
+.rightText {
+  display: flex;
+  align-items: center;
+}
+
+.nav:hover,
+.rightText:hover,
+.middleText:hover {
+  cursor: pointer;
+}
+
+.nav {
+  gap: 2vw;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.homeLink:hover {
+  color: #d7d7d7;
+}
+
+.middleText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'DynaPuff', cursive;
+  font-size: 0.5rem;
+}
+
+.middleText>h1 {
+  margin: 0;
+}
+
+.slogan {
+  color: #C1666B;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+  margin-bottom: 5px;
+}
+
+.text1 {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  margin-top: 5px
+}
+
+.home {
+  display: flex;
+  gap: 3vw;
+  height: 90vh;
+}
+
+.bodyPic {
+  height: 90vh;
+  width: 60vh;
+  border-right: solid 0.2vw #171717;
+}
+
+.bodyText {
+  width: 120vh;
+}
+
+.storeButton {
+  width: 15vw;
+  height: 10vh;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.1vw;
+  color: #1F1D28;
+  background-color: #9A8D9E;
+  border: solid 0.2vw #1F1D28;
+  border-radius: 15px;
+}
+
+.storeButton:hover {
+  cursor: pointer;
+  background-color: #424242;
+  border: solid 0.2vw #000000;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vh;
+  width: 80vw;
+}
+
+.blackDice,
+.blueDice {
+  display: flex;
+  justify-content: space-around;
+  gap: 5vw;
+}
+
+.card {
+  font-family: 'Bebas Neue', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.2vw solid #363636;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  padding: 1vw;
+}
+
+.cardInfo {
+  font-family: 'Bebas Neue', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  padding: 1vw;
+}
+
+.shoppingCart {
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  right: 0;
+  top: 0;
+  border-left: solid 0.5vw #1B1927;
+  height: 100vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9A8D9E;
+  position: sticky;
+}
+
+.exitIcon {
+  width: 2vw;
+}
+
+.shoppingItem {
+  display: flex;
+  justify-content: space-around;
+}
+
+.body {
+  display: flex;
+}
+
+.price {
+  text-align: center;
+}
