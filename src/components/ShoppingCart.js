@@ -1,6 +1,7 @@
 import exit from '../images/exit.svg'
 import add from '../images/add.svg'
 import minus from '../images/minus.svg'
+import { Link } from 'react-router-dom';
 
 function ShoppingItem({ name, quantity, price }) {
     return (
@@ -69,6 +70,9 @@ export default function ShoppingCart(props) {
                 ))}
 
                 <h1 className='price'>Total Price: <br></br>${total.toFixed(2)}</h1>
+                <Link to="/checkout">
+                    <button>Checkout</button>
+                </Link>
             </div>
         )
     }

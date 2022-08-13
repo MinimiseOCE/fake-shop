@@ -9,7 +9,6 @@ let homeItems = []
 export default function Home() {
     const [showCart, toggleCart] = useState(false)
     homeItems = globalItems
-    console.log(homeItems)
     return (
         <div >
             <Header items={globalItems} show={showCart} toggleCart={toggle => toggleCart(toggle)} />

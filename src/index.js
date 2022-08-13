@@ -7,7 +7,9 @@ import {
 // import your route components too
 import Home from "./components/Home";
 import Store from "./components/Store";
+import Checkout from "./components/Checkout";
 import './index.css'
+
 
 const root = ReactDOM.createRoot(
   document.getElementById("root")
@@ -18,6 +20,8 @@ root.render(
       <Route path="/" element={<Home />}>
       </Route>
       <Route path="/store" element={<Store />}>
+      </Route>
+      <Route path="/checkout" element={<Checkout />}>
       </Route>
     </Routes>
   </BrowserRouter>
