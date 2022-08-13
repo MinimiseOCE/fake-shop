@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fake-shop/static/css/main.394f7785.css",
-    "main.js": "/fake-shop/static/js/main.1b5735ad.js",
+    "main.css": "/fake-shop/static/css/main.de1b77d3.css",
+    "main.js": "/fake-shop/static/js/main.d0184111.js",
     "static/media/black4alt.png": "/fake-shop/static/media/black4alt.83690849bbaae59539f8.png",
     "static/media/blue6alt.png": "/fake-shop/static/media/blue6alt.939d431b57d21a209b89.png",
     "static/media/black4.png": "/fake-shop/static/media/black4.21a88750468762fb5c26.png",
@@ -26,11 +26,11 @@
     "static/media/add.svg": "/fake-shop/static/media/add.b69cf7bc50ce4ad0c8c8f39c5fbe26f4.svg",
     "static/media/minus.svg": "/fake-shop/static/media/minus.f0e1fc9ddb0cd316bb9f4493c9e8466a.svg",
     "index.html": "/fake-shop/index.html",
-    "main.394f7785.css.map": "/fake-shop/static/css/main.394f7785.css.map",
-    "main.1b5735ad.js.map": "/fake-shop/static/js/main.1b5735ad.js.map"
+    "main.de1b77d3.css.map": "/fake-shop/static/css/main.de1b77d3.css.map",
+    "main.d0184111.js.map": "/fake-shop/static/js/main.d0184111.js.map"
   },
   "entrypoints": [
-    "static/css/main.394f7785.css",
-    "static/js/main.1b5735ad.js"
+    "static/css/main.de1b77d3.css",
+    "static/js/main.d0184111.js"
   ]
 }
