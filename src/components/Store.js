@@ -8,7 +8,7 @@ import bb6 from '../images/products/blue6.jpg'
 import bb10 from '../images/products/blue10.jpg'
 import bb12 from '../images/products/blue12.jpg'
 import addCart from '../images/addCart.svg'
-
+import { homeItems } from './Home'
 import { useState } from 'react';
 import ShoppingCart from './ShoppingCart';
 
@@ -25,9 +25,16 @@ function Item({ title, id, price }) {
     )
 }
 
-export default function Store() {
-    const [items, setItems] = useState([])
+let globalItems = []
+
+export default function Store(props) {
+    console.log(homeItems)
+    const [items, setItems] = useState(globalItems)
+    const [showCart, toggleCart] = useState(false)
     function handleClick(id, price) {
+        if (!showCart) {
+            toggleCart(!showCart)
+        }
         if (!items.some(item => item.id === id)) {
             setItems([
                 ...items,
@@ -39,9 +46,10 @@ export default function Store() {
             setItems([...items]);
         }
     }
+    globalItems = items
     return (
         <div>
-            <Header />
+            <Header items={items} show={showCart} toggleCart={toggle => toggleCart(toggle)} />
             <div className='body'>
                 <div className="store">
                     <div className='storeText'>
@@ -84,9 +92,11 @@ export default function Store() {
                         </div>
                     </div>
                 </div>
-                <ShoppingCart items={items} updateItem={id => setItems(id)} />
+                {showCart ? <ShoppingCart items={items} updateItem={id => setItems(id)} /> : null}
             </div>
 
         </div>
     );
 }
+
+export { globalItems }

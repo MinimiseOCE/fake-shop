@@ -2,8 +2,7 @@ import logo from '../images/logo.svg'
 import cart from '../images/cart.svg'
 import { Link } from 'react-router-dom';
 
-export default function Header() {
-    let items = 0;
+export default function Header(props) {
     return (
         <div className="header">
             <nav className='nav'>
@@ -18,10 +17,13 @@ export default function Header() {
 
                 </div>
             </Link>
-            <div className='rightText'>
-                <img className='cart' src={cart} alt='cart'></img>
-                <h2>({items})</h2>
-            </div>
+            <Link to="/store">
+                <div className='rightText'>
+                    <img className='cart' src={cart} alt='cart' onClick={() => props.toggleCart(!props.show)}
+                    ></img>
+                    <h2>({props.items.length})</h2>
+                </div>
+            </Link>
         </div>
     );
 }

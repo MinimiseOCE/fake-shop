@@ -11,6 +11,7 @@ function ShoppingItem({ name, quantity, price }) {
 
 export default function ShoppingCart(props) {
     let total = 0;
+
     function addItem(tag) {
         const objIndex = props.items.findIndex((item => item.id === tag));
         const updatedArray = props.items.map((item, i) => {
@@ -27,17 +28,22 @@ export default function ShoppingCart(props) {
     }
     function subtractItem(tag) {
         const objIndex = props.items.findIndex((item => item.id === tag));
-        const updatedArray = props.items.map((item, i) => {
-            if (i === objIndex) {
-                // Increment the clicked counter
-                item.quantity--;
-                return item;
-            } else {
-                // The rest haven't changed
-                return item;
-            }
-        });
-        props.updateItem(updatedArray);
+        if (props.items[objIndex].quantity > 1) {
+            const updatedArray = props.items.map((item, i) => {
+                if (i === objIndex) {
+                    // Increment the clicked counter
+                    item.quantity--;
+                    return item;
+                } else {
+                    // The rest haven't changed
+                    return item;
+                }
+            });
+            props.updateItem(updatedArray);
+        }
+        else {
+            removeItem(tag)
+        }
     }
     function removeItem(tag) {
         const filteredItems = props.items.filter((item) => item.id !== tag);
